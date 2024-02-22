@@ -1,0 +1,84 @@
+PATH
+  remote: .
+  specs:
+    enerbot-slack (1.1.0)
+      async-websocket (~> 0.8.0)
+      bson_ext
+      colorize (~> 0.8.1)
+      slack-ruby-client (= 2.0.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    async (2.8.1)
+      console (~> 1.10)
+      fiber-annotation
+      io-event (~> 1.1)
+      timers (~> 4.1)
+    async-io (1.41.0)
+      async
+    async-websocket (0.8.0)
+      async-io
+      websocket-driver (~> 0.7.0)
+    bson (1.12.5)
+    bson_ext (1.12.5)
+      bson (~> 1.12.5)
+    colorize (0.8.1)
+    console (1.23.4)
+      fiber-annotation
+      fiber-local
+      json
+    diff-lcs (1.4.4)
+    faraday (2.9.0)
+      faraday-net_http (>= 2.0, < 3.2)
+    faraday-mashify (0.1.1)
+      faraday (~> 2.0)
+      hashie
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
+    faraday-net_http (3.1.0)
+      net-http
+    fiber-annotation (0.2.0)
+    fiber-local (1.0.0)
+    gli (2.21.1)
+    hashie (5.0.0)
+    io-event (1.4.4)
+    json (2.7.1)
+    multipart-post (2.4.0)
+    net-http (0.4.1)
+      uri
+    rspec (3.9.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
+    rspec-core (3.9.2)
+      rspec-support (~> 3.9.3)
+    rspec-expectations (3.9.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-mocks (3.9.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-support (3.9.3)
+    slack-ruby-client (2.0.0)
+      faraday (>= 2.0)
+      faraday-mashify
+      faraday-multipart
+      gli
+      hashie
+      websocket-driver
+    timers (4.3.5)
+    uri (0.13.0)
+    websocket-driver (0.7.6)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  enerbot-slack!
+  rspec (~> 3.2)
+
+BUNDLED WITH
+   2.1.4

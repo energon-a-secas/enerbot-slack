@@ -1,0 +1,15 @@
+---
+  version: '3'
+  services:
+    shell:
+      image: energonhq/ruby:v3.1.4
+      environment:
+        SLACK_TOKEN: $SLACK_TOKEN
+        SLACK_NAME: 'Jira Assistant'
+        SLACK_ICON: 'https://i.imgur.com/LyTqVNT.png'
+        SLACK_DEFAULT_CHANNEL: 'ehq-flying-battery'
+      working_dir: /build
+      volumes:
+          - $PWD/:/build
+      entrypoint: /bin/bash
+      command: ["-c", "bundler install && exec /bin/bash"]
